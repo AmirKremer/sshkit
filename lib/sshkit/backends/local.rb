@@ -11,7 +11,7 @@ module SSHKit
       end
 
       def run
-        instance_exec(&@block)
+        instance_exec(host, &@block)
       end
 
       def test(*args)
